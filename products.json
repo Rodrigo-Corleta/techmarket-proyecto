@@ -1,0 +1,42 @@
+[
+	{ 
+        "id": "1",
+        "marca": "Samsung S23 Ultra", 
+        "precio": 170000,
+        "categoria": "Teléfono",
+        "descripcion":"Samsung Galaxy S23 Ultra 12gb 512gb lavander",
+        "img":"../assets/img/productos/s23ultra512gb.webp"
+    },
+	{ 
+        "id":"2",
+        "marca": "Iphone 14 Pro Max",
+        "precio": 400000,
+        "categoria": "Teléfono", 
+        "descripcion": "Iphone 14 Pro Max (256bg) - Negro espacial",
+        "img":"../assets/img/productos/iphone14promax256.webp"
+    },
+	{ 
+        "id":"3",
+        "marca": "Asus Zenbook Duo", 
+        "precio": 600000,
+        "categoria": "Notebook",
+        "descripcion": "Asus Zenbook Duo Pro 14 Oled 14,5, I7, 16 gb ram, 1tb, W11",
+        "img":"../assets/img/productos/asuszenbookduopro14.webp" 
+    },
+	{ 
+        "id":"4",
+        "marca": "Lenovo Flex 5",
+        "precio": 200000,
+        "categoria": "Notebook",
+        "descripcion": "Lenovo Flex 5 i5, 8gb ram, ssd 256gb, W11",
+        "img":"../assets/img/productos/lenovoflex5.webp"
+    },
+    {
+        "id":"5",
+        "marca":"Sony 1000x",
+        "precio":100000,
+        "categoria":"Auriculares",
+        "descripcion": "Auriculares inalámbricos Sony 1000X - Negro mate",
+        "img":"../assets/img/productos/sony1000x.webp"
+    }
+]

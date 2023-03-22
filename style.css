@@ -1,0 +1,70 @@
+/* Barra de navegacion */
+.encabezado{
+    background-color: #000000;
+    top: 0;
+}
+
+.navegacion__pagina{
+    background-image: linear-gradient(#a89211,#a89211);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+}
+
+.navegacion__pagina:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.footer__img{
+    width: 10em;
+    height: auto;
+}
+
+/* Carousel */
+.seccion_1{
+    margin-top: 5em;
+}
+
+.carousel-item {
+    max-width: 100em;
+}
+
+/* seccion inicio */
+.carta_img_opacidad {
+    filter: brightness(0.5);
+}
+
+.card{
+    transition-duration: .7s;
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+}
+
+.carta_efecto:hover .card{
+    clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+.card-img-overlay{
+    transition-duration: .7s;
+}
+
+.carta_efecto:hover .card-img-overlay{
+    transform: scale(.9);
+} 
+
+/* tienda */
+.seccion_1_tienda{
+    padding-top: 10em;
+}
+
+.card-img-top{
+    width: 90%;
+    height: 400px;
+}
+
+/* Seccion comprar */
+.seccion_1_comprar{
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
