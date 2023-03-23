@@ -45,7 +45,6 @@ precioPagComprar(carrito)
 // Acá le doy funcionalidad al botón finalizar commpra para que al apretarlo muestre dos alerts, una preguntando si desea finalizar la compra y la otra confirmando la compra en caso de que el usuario presione en el boton para continuar.
 const FinalizarCompraBtn= document.getElementById('finalizarCompra');
 FinalizarCompraBtn.addEventListener ('click',()=>{
-    formularioCompra()
     Swal.fire({
         icon: 'question',
         title: '¿Seguro que desea finalizar su compra?',
