@@ -64,9 +64,9 @@ FinalizarCompraBtn.addEventListener ('click',()=>{
     })
 // ahora borramos el contenido del carrito luego de que el usuario realice la compra
 	carrito = [];
-    obtenerStorage(carrito)
 	almacenarStorage(carrito);
 	precioPagComprar(carrito);
+    obtenerStorage(carrito);
 });
 
 
