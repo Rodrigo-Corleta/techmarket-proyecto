@@ -51,11 +51,18 @@ async function obtenerProductos() {
             </div>`;
 		});
 	} catch (error) {
-		console.log(error);
+		Swal.fire({
+			icon:'error',
+			title:'Lo siento',
+			text:'Ha ocurrido un error:'
+		})
 	}
 }
 
-obtenerProductos();
+if(contenedor){
+	obtenerProductos();
+}
+
 
 // Acá le damos la funcionalidad al botón de eliminar producto, donde el usuario al hacer click en el botón, se le muestra una alerta usando sweetalert para saber si el usuario confirma la eliminacion del producto o no, de confirmar la eliminación con un findindex() busco si el producto existe en el carrito, de hacerlo se lo elimina usando un splice, y se le muestra un toast de confirmacion al usuario. Luego llamando a almacenarstorage() y mostrarcarrito() actualizamos el estado del carrito tanto en el interfaz como en el localstorage. En caso de que el usuario no confirme la eliminacion del producto (presione cancelar en la primer alaerta de sweetalert) se cierra la alerta y puede seguir navegando.
 const eliminarProducto = (id) => {
@@ -146,7 +153,7 @@ finalizarCompra.addEventListener('click', () => {
 	} else {
         location.href= "comprar.html"
     }
-// ahora borramos el contenido del carrito luego de que el usuario realice la compra
+// ahora borramos el contenido del modal del carrito luego de que el usuario preione en comprar y se lo redireccione a comprar.html
 	carrito = [];
 	actualizarPrecio(carrito);
 	mostrarCarrito (carrito);
